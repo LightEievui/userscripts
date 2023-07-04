@@ -6,6 +6,8 @@
 // @author       Eievui
 // @homepageURL  https://derpibooru.org/profiles/Eievui
 // @supportURL   https://derpibooru.org/conversations/new?recipient=Eievui
+// @downloadURL  https://github.com/LightEievui/userscripts/raw/main/derpibooru/DerpiPostArchiver.js
+// @updateURL    https://github.com/LightEievui/userscripts/raw/main/derpibooru/DerpiPostArchiver.js
 // @match        *://*.derpibooru.org/*
 // @match        *://*.trixiebooru.org/*
 // @icon         https://derpibooru.org/favicon.svg
