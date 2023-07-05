@@ -13,6 +13,7 @@
 // @match        *://*.trixiebooru.org/*
 // @icon         https://derpibooru.org/favicon.svg
 // @grant        none
+// @inject-into  content
 // @noframes
 // ==/UserScript==
 
