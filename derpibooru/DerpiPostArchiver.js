@@ -68,7 +68,7 @@ View your archived from user dropdown list
       const unarchive = `
           <a onclick="
         let data = JSON.parse(localStorage.getItem('DPA_data') || '[]');
-        data = data.splice(${num + 1}, 1);
+        data.splice(${num}, 1);
         localStorage.setItem('DPA_data', JSON.stringify(data));
         this.parentNode.parentNode.parentNode.parentNode.remove();
         return false;
