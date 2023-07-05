@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Derpi Post Archiver
 // @namespace    Eievui
-// @version      0.1
+// @version      0.2
 // @description  Archive / bookmark derpibooru comments and forum posts to easily view later for funny or helpful posts
 // @author       Eievui
 // @homepageURL  https://derpibooru.org/profiles/Eievui
@@ -21,6 +21,8 @@ This does not archive badges because each saved badge would've added another ~0.
 Archive button will be under each comment and forum post
 View your archived from user dropdown list
 */
+
+// Remove
 
 (function() {
   "use strict";
