@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Derpi Post Archiver
 // @namespace    Eievui
-// @version      0.1
+// @version      0.2
 // @description  Archive / bookmark derpibooru comments and forum posts to easily view later for funny or helpful posts
 // @author       Eievui
 // @homepageURL  https://derpibooru.org/profiles/Eievui
@@ -110,12 +110,21 @@ View your archived from user dropdown list
     setSpot[i].parentNode.insertBefore(setArchive, setSpot[i]);
     setArchive.outerHTML = `<a onclick="
         const post = event.target.parentNode.parentNode.parentNode.parentNode;
-        const name = post.querySelector('.communication__body__sender-name a').innerHTML;
+        let name = post.querySelector('.communication__body__sender-name strong').innerHTML;
+        if(post.querySelector('.communication__body__sender-name a')) {
+        name = post.querySelector('.communication__body__sender-name a').innerHTML;
+        }
         const content = post.querySelector('.communication__body__text').innerHTML;
-        const avatar = post.querySelector('.avatar--100px img').src;
+        let avatar = 'https://derpicdn.net/img/download/2016/11/8/1291192__safe_artist-colon-the+smiling+pony_derpibooru+exclusive_lyra+heartstrings_pony_unicorn_derpibooru_-dot-svg+available_avatar_background+pony_derpibooru+.svg';
+        if(post.querySelector('.image-constrained img')) {
+        avatar = post.querySelector('.image-constrained img').src;
+        }
         const id = post.id.split('_')[1];
         const url = window.location.pathname;
-        const title = Array.from(post.querySelectorAll('.label--block')).map(x => x.outerHTML).join(' ');
+        let title = '<span></span>';
+        if(post.querySelectorAll('.label--block')) {
+        title = Array.from(post.querySelectorAll('.label--block')).map(x => x.outerHTML).join(' ');
+        }
         const datetime = post.querySelector('time').dateTime;
         const timetitle = post.querySelector('time').title;
         let type = 'forum';
