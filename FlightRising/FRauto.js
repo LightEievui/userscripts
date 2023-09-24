@@ -4,6 +4,10 @@
 // @version      0.1
 // @description  Auto-complete certain tasks so I can focus on my dragon empire
 // @author       LightEievui
+// @homepageURL  https://www1.flightrising.com/clan-profile/687969
+// @supportURL   https://github.com/LightEievui/userscripts/issues/new
+// @downloadURL  https://github.com/LightEievui/userscripts/raw/main/FlightRising/FRauto.js
+// @updateURL    https://github.com/LightEievui/userscripts/raw/main/FlightRising/FRauto.js
 // @match        https://www1.flightrising.com/*
 // @icon         https://www1.flightrising.com/static/favicon.ico
 // @grant        none
